@@ -3,8 +3,8 @@ var app = angular.module("app", ["ngRoute", "app.about", "app.home", "app.whyilo
 app.config(function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('');
   $routeProvider.when("/", {
-    redirectTo: "/Home"
+    redirectTo: "/home"
   }).otherwise("/", {
-    redirectTo: "/Home"
+    redirectTo: "/home"
   })
 })
